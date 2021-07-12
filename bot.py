@@ -4,7 +4,7 @@ from PyDictionary import PyDictionary
 
 bot = commands.Bot(command_prefix='!')
 
-"""
+#gives different ides and matches letters with numbers.
 @bot.command(name="idea", help="send ideas if you don't have ideas")
 async def idea(ctx):
     await ctx.send("Ideas ardcfvghbjnk")
@@ -15,8 +15,7 @@ async def idea(ctx):
     bam = f'how about {random.choice(abc)} with {random.choice(num)}'
     await ctx.send(bam)
 
-
-
+# does calculation (simple arithmetics).
 @bot.command(name='maths', help="perform basic maths")
 async def maths(ctx, x: float, fn: str, y: float):
     if fn == '+':
@@ -36,7 +35,7 @@ async def maths(ctx, x: float, fn: str, y: float):
 async def thanks(ctx):
     await ctx.send("no problem!")
 
-"""
+
 class keyValue(dict):
     def __init__(self):
         self = dict()
